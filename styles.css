@@ -1,0 +1,43 @@
+.boton{
+  width:50px;
+  height:50px;
+  margin: 5px;
+  border-radius: 50%;
+  font-size: 32px;
+  float: right;
+  color: white;
+}
+
+.mas {
+	background-color: green;
+
+}
+
+.menos {
+	background-color: red;
+}
+
+.mesa {
+	width: 50%;
+	height: 50%;
+}
+
+.primera {
+	margin-left: 100px;
+}
+
+.lateral {
+	margin-bottom: 35px;
+}
+
+.abajo {
+	transform: rotate(180deg);
+}
+
+.izquierda {
+	transform: rotate(-90deg);
+}
+
+.derecha {
+	transform: rotate(90deg);
+}
