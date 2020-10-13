@@ -20,6 +20,15 @@
 .mesa {
 	width: 50%;
 	height: 50%;
+	position: relative;
+}
+
+.margenSup {
+	top: 118px;
+}
+
+.margenIzq {
+	left: 120px;
 }
 
 .primera {

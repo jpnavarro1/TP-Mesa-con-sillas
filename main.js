@@ -37,11 +37,13 @@ window.onload = function() {
 			nuevaSilla.className = clasesSilla + ' silla'
 			switch(numeroSilla) {
 				case 0:
+					mesa.classList.remove('margenSup')
 				case 1:
 				case 2:
 					body.insertBefore(nuevaSilla, top)
 				break
 				case 3:
+					mesa.classList.remove('margenIzq')
 					body.insertBefore(nuevaSilla, mesa)
 				break
 				case 4:
@@ -59,6 +61,12 @@ window.onload = function() {
 			ultimaSilla = document.querySelectorAll('.silla')
 			ultimaSilla = ultimaSilla[ultimaSilla.length - 1]
 			body.removeChild(ultimaSilla)
+			if(numeroSilla === 4) {
+				mesa.classList.add('margenIzq')
+			}
+			if(numeroSilla === 1) {
+				mesa.classList.add('margenSup')
+			}
 			numeroSilla--
 		}
 	}
